@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gamekit - Home</title>
-
+ <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .glow-text {
       text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc, 0 0 30px #9900ff;
@@ -13,6 +13,7 @@
 </head>
 <body class="bg-[#0a0a1a] text-white font-sans">
 
+ 
   <!-- Hero Section with Gamer Room Background -->
   <section class="h-screen bg-cover bg-center relative" style="background-image: url('https://img.freepik.com/free-vector/detailed-gamer-room-illustration_23-2148923561.jpg?t=st=1746506650~exp=1746510250~hmac=4929f3342f7656e184e4a4f8ca1fff3859c8a5976c076b8c8a8f9fb9e6aba65b&w=1800');">
     <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
@@ -22,60 +23,57 @@
       <a href="#about" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full font-semibold transition">Get Started</a>
     </div>
   </section>
- <script>
-        // Smooth Scroll Function to Experience Section
-        function showExperience() {
-            document.getElementById("experience").scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
 
-</body>
-</html>
-<!-- Experience Section -->
-<section id="experience" class="bg-[#0a0a1a] py-20 border-t border-white/10">
-  <div class="max-w-5xl mx-auto px-6">
-    <h2 class="text-4xl font-bold text-center mb-12">Experience</h2>
+  <!-- Experience Section -->
+  <section id="experience" class="bg-[#0a0a1a] py-20 border-t border-white/10">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Experience</h2>
 
-    <div class="space-y-10">
-      
-      <!-- Experience Block -->
-      <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
-        <div>
-          <h3 class="text-2xl font-semibold">Independent Game Developer</h3>
-          <p class="text-white/70">Jan 2024 – Apr 2024</p>
+      <div class="space-y-10">
+        <!-- Experience Block -->
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+          <div>
+            <h3 class="text-2xl font-semibold">Independent Game Developer</h3>
+            <p class="text-white/70">Jan 2024 – Apr 2024</p>
+          </div>
+          <span class="text-purple-400 font-semibold mt-2 md:mt-0">Unity · C# · Git</span>
         </div>
-        <span class="text-purple-400 font-semibold mt-2 md:mt-0">Unity · C# · Git</span>
-      </div>
 
-      <!-- Experience Block -->
-      <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
-        <div>
-          <h3 class="text-2xl font-semibold">Freelance Game Projects</h3>
-          <p class="text-white/70">2024 Present</p>
+        <!-- Experience Block -->
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+          <div>
+            <h3 class="text-2xl font-semibold">Freelance Game Projects</h3>
+            <p class="text-white/70">2024 – Present</p>
+          </div>
+          <span class="text-purple-400 font-semibold mt-2 md:mt-0">2D/3D Games · Unreal Engine · Multiplayer</span>
         </div>
-        <span class="text-purple-400 font-semibold mt-2 md:mt-0">2D/3D Games · Unreal Engine · Multiplayer</span>
-      </div>
 
-      <!-- Experience Block -->
-      <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
-        <div>
-          <h3 class="text-2xl font-semibold">Game Developer at Gamekit</h3>
-          <p class="text-white/70">2024 – Present</p>
+        <!-- Experience Block -->
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+          <div>
+            <h3 class="text-2xl font-semibold">Game Developer at Gamekit</h3>
+            <p class="text-white/70">2024 – Present</p>
+          </div>
+          <span class="text-purple-400 font-semibold mt-2 md:mt-0">Game Design · UI/UX · Project Management</span>
         </div>
-        <span class="text-purple-400 font-semibold mt-2 md:mt-0">Game Design · UI/UX · Project Management</span>
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- About Us Section with Gradient -->
+  <!-- About Us Section -->
   <section id="about" class="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 py-20">
     <div class="max-w-4xl mx-auto text-center bg-white/10 backdrop-blur-md rounded-xl p-10 border border-white/20 shadow-lg">
       <h2 class="text-4xl font-bold mb-4">About Us</h2>
       <p class="text-lg text-white/80">I'm a self-taught Game Developer skilled in Unity and Unreal Engine. I love working on 2D and 3D games, focusing on multiplayer features and AI. My goal is to keep learning and building fun, high-quality games that players enjoy.</p>
     </div>
   </section>
+
+  <!-- Smooth Scroll Script -->
+  <script>
+    function showExperience() {
+      document.getElementById("experience").scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 
 </body>
 </html>
