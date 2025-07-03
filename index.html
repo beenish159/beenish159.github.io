@@ -1,79 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gamekit - Home</title>
- <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beenish | Graphic Designer Portfolio</title>
   <style>
-    .glow-text {
-      text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc, 0 0 30px #9900ff;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header, section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    header {
+      background: #1e1e1e;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #bb86fc;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    section h2 {
+      color: #bb86fc;
+      margin-bottom: 20px;
+    }
+    .project {
+      margin-bottom: 20px;
+    }
+    .project-title {
+      font-weight: bold;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+    .contact p {
+      margin: 5px 0;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #bb86fc;
+      color: #121212;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #msg {
+      margin-top: 10px;
+      color: #03dac6;
+      font-weight: bold;
     }
   </style>
 </head>
-<body class="bg-[#0a0a1a] text-white font-sans">
+<body>
+  <header>
+    <h1>Hi, I'm Beenish</h1>
+    <p>Graphic Designer | Canva Specialist – I design modern banners, logos, templates, and cards.</p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="msg"></p>
+  </header>
 
- 
-  <!-- Hero Section with Gamer Room Background -->
-  <section class="h-screen bg-cover bg-center relative" style="background-image: url('https://img.freepik.com/free-vector/detailed-gamer-room-illustration_23-2148923561.jpg?t=st=1746506650~exp=1746510250~hmac=4929f3342f7656e184e4a4f8ca1fff3859c8a5976c076b8c8a8f9fb9e6aba65b&w=1800');">
-    <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
-    <div class="relative z-10 flex flex-col justify-center items-center text-center text-white h-full px-4">
-      <h1 class="text-5xl md:text-6xl font-extrabold glow-text mb-4">Step Into the Gamekit World</h1>
-      <p class="text-lg md:text-xl max-w-xl text-white/80 mb-6">A dynamic gamer workspace powered by imagination, creativity, and code. Join the digital revolution.</p>
-      <a href="#about" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full font-semibold transition">Get Started</a>
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <p class="project-title">🖼️ Canva Banner & Flyer Designs</p>
+      <p>Eye-catching promotional materials created for events and small businesses</p>
+    </div>
+    <div class="project">
+      <p class="project-title">🎨 Logo Collection</p>
+      <p>Minimalist and bold logo designs crafted using Canva and Illustrator</p>
+    </div>
+    <div class="project">
+      <p class="project-title">📱 Instagram Templates</p>
+      <p>Beauty and fashion-themed social media posts using Canva</p>
+    </div>
+    <div class="project">
+      <p class="project-title">💌 Business Cards & Greeting Cards</p>
+      <p>Elegant card designs for personal and brand identity</p>
     </div>
   </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="bg-[#0a0a1a] py-20 border-t border-white/10">
-    <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-12">Experience</h2>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a creative graphic designer skilled in Canva, Photoshop, and Illustrator. I specialize in digital design assets like logos, banners, cards, and templates — helping brands communicate clearly and beautifully.</p>
+  </section>
 
-      <div class="space-y-10">
-        <!-- Experience Block -->
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
-          <div>
-            <h3 class="text-2xl font-semibold">Independent Game Developer</h3>
-            <p class="text-white/70">Jan 2024 – Apr 2024</p>
-          </div>
-          <span class="text-purple-400 font-semibold mt-2 md:mt-0">Unity · C# · Git</span>
-        </div>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Canva, Adobe Photoshop, Illustrator</li>
+      <li>Social Media Templates, Flyers, Cards, Banners</li>
+      <li>Logo Design, Branding</li>
+      <li>Figma (for basic UI mockups)</li>
+    </ul>
+  </section>
 
-        <!-- Experience Block -->
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
-          <div>
-            <h3 class="text-2xl font-semibold">Freelance Game Projects</h3>
-            <p class="text-white/70">2024 – Present</p>
-          </div>
-          <span class="text-purple-400 font-semibold mt-2 md:mt-0">2D/3D Games · Unreal Engine · Multiplayer</span>
-        </div>
+  <section id="experience">
+    <h2>Experience</h2>
 
-        <!-- Experience Block -->
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
-          <div>
-            <h3 class="text-2xl font-semibold">Game Developer at Gamekit</h3>
-            <p class="text-white/70">2024 – Present</p>
-          </div>
-          <span class="text-purple-400 font-semibold mt-2 md:mt-0">Game Design · UI/UX · Project Management</span>
-        </div>
-      </div>
+    <div>
+      <p><strong>Freelance Canva Designer</strong> <br> <em>Jan 2024 – Present</em></p>
+      <ul>
+        <li>Designed over 50 templates including logos, banners, and business cards</li>
+        <li>Worked with small brands and students to build modern visual identity</li>
+        <li>Delivered projects through Fiverr and direct outreach</li>
+      </ul>
+    </div>
+
+    <div>
+      <p><strong>Intern - Graphic Design (Remote)</strong> <br> <em>Mar 2024 – May 2024</em></p>
+      <ul>
+        <li>Created social media posts and e-commerce visuals using Canva</li>
+        <li>Redesigned banners and thumbnails for product listings</li>
+      </ul>
     </div>
   </section>
 
-  <!-- About Us Section -->
-  <section id="about" class="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 py-20">
-    <div class="max-w-4xl mx-auto text-center bg-white/10 backdrop-blur-md rounded-xl p-10 border border-white/20 shadow-lg">
-      <h2 class="text-4xl font-bold mb-4">About Us</h2>
-      <p class="text-lg text-white/80">I'm a self-taught Game Developer skilled in Unity and Unreal Engine. I love working on 2D and 3D games, focusing on multiplayer features and AI. My goal is to keep learning and building fun, high-quality games that players enjoy.</p>
-    </div>
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: creativestudio614@gmail.com</p>
+
   </section>
 
-  <!-- Smooth Scroll Script -->
   <script>
-    function showExperience() {
-      document.getElementById("experience").scrollIntoView({ behavior: 'smooth' });
+    function showMessage() {
+      document.getElementById("msg").textContent = "Thank you for visiting my portfolio!";
     }
   </script>
-
 </body>
 </html>
